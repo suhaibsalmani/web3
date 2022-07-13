@@ -24,7 +24,7 @@ header {
     justify-content: space-between;
     align-items: center;
     margin-top: 1rem;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .navigation {
