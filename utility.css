@@ -79,13 +79,14 @@ header {
     background-color: blue;
 }
 
-section{
+section {
     /* border: 2px solid blue; */
     margin-top: 30px;
     height: 350px;
     width: 100%;
 }
-.banner_image{
+
+.banner_image {
     border-radius: 12px;
     height: 100%;
     width: 95%;
@@ -94,7 +95,8 @@ section{
     background-image: url(image1.jpg);
     background-size: cover;
 }
-.box2{
+
+.box2 {
     margin: auto;
     margin-top: -40px;
     height: fit-content;
@@ -107,7 +109,10 @@ section{
     display: flex;
     padding: 20px;
 }
-.box_a, .box_b, .box_c{
+
+.box_a,
+.box_b,
+.box_c {
     /* border: 2px solid black; */
     width: 33%;
     height: 100%;
@@ -117,15 +122,21 @@ section{
     align-items: center;
     /* overflow: hidden; */
 }
-.box_a_title, .box_b_title, .box_c_title{
+
+.box_a_title,
+.box_b_title,
+.box_c_title {
     text-align: center;
 }
-.box_a_services, .box_b_services, .box_c_services{
+
+.box_a_services,
+.box_b_services,
+.box_c_services {
     margin: 1rem;
     display: flex;
     flex-wrap: wrap;
     /* overflow: hidden; */
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     width: 100%;
     /* height: 50px; */
@@ -140,7 +151,7 @@ section{
     box-shadow: 0 0 8px;
 }
 
-.box_b_services a{
+.box_b_services a {
     margin: 10px 10px;
     border: 3px solid red;
     height: 50px;
@@ -150,7 +161,7 @@ section{
     box-shadow: 0 0 8px;
 }
 
-.box_c_services a{
+.box_c_services a {
     border: 3px solid greenyellow;
     background-color: greenyellow;
     margin: 10px 10px;
@@ -161,35 +172,58 @@ section{
     float: left;
 }
 
-.box_c_services a:nth-child(5){
+.box_c_services a:nth-child(5) {
     background-color: white;
 }
 
-.box3{
+.box3 {
     width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    
+
     /* background-color: white; */
     margin: 50px auto;
 }
 
-.blog_tile{
+.blog_tile {
     background-image: linear-gradient(60deg, rgb(204, 204, 204), rgba(0, 0, 255, 0.87));
     min-width: 300px;
     min-height: 400px;
     margin: 20px;
     border-radius: 12px;
     box-shadow: 0 0 12px;
-    
+
 }
 
 @media only screen and (max-width:400px) {
-    
-    .navigation, .navigation ul {
+
+    .navigation,
+    .navigation ul {
         display: none;
     }
-    
+
+    .box2 {
+        flex-direction: column;
+        /* width: 100%; */
+    }
+
+    .box_a,
+    .box_b,
+    .box_c {
+        width: 100%;
+    }
+    }
+@media only screen and (max-width:1200px){
+    .box2 {
+        flex-direction: column;
+        /* width: 100%; */
+    }
+    .box_a,
+    .box_b,
+    .box_c {
+        width: 100%;
+    }
+    }
 }
